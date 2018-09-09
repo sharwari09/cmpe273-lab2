@@ -1,0 +1,12 @@
+
+#### Server side
+Sharwaris-MacBook-Pro:calculator sharwariphadnis$ python3.6 server.py 
+Starting server...
+Server is now started...
+
+#### Client side
+Sharwaris-MacBook-Pro:calculator sharwariphadnis$ python3.6 client.py 
+Addition of num1 and num2 is :
+
+110
+Sharwaris-MacBook-Pro:calculator sharwariphadnis$
