@@ -1,13 +1,15 @@
 from concurrent import futures
-import time
-import grpc
 import calculator_pb2
+import grpc
+import time
 
 _ONE_DAY_IN_SECONDS = 60 * 60 * 24
 
 class Calculator(calculator_pb2.CalculatorServicer):
 
   def Add(self, request, context):
+    print("\nExecuting addition of {} and {} from server ".format(
+          request.num1, request.num2))
     return calculator_pb2.AddReply(sum=request.num1+request.num2)
 
 def serve():
